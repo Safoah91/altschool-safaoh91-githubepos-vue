@@ -8,7 +8,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 </script>
 
 <template>
-  <div class="bg-slate-800 pt-10 pb-32 px-28">
+  <div class="bg-slate-800 pt-28 pb-32 px-28">
     <div class="flex flex-col items-center justify-center text-center">
       <div class="w-1/2 flex flex-col items-center">
         <img src="./../assets/images/avatar.png" class="w-32" alt="" />
