@@ -1,20 +1,20 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import RepositoryView from "../views/RepositoryView.vue";
+import RepoView from "../views/RepoView.vue";
 import NoPageView from "../views/NoPageView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: "/",
       name: "home",
+      path: "/",
       component: HomeView,
     },
     {
-      path: "/repository",
-      name: "repository",
-      component: RepositoryView,
+      name: "repo",
+      path: "/repo/:id",
+      component: RepoView,
     },
     {
       path: "/:pathMatch(.*)*",

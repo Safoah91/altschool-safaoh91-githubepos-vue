@@ -1,6 +1,3 @@
-<script>
-import { RouterView, RouterLink } from "vue-router";
-</script>
 <template>
   <header class="bg-slate-900">
     <nav class="px-[7rem] flex justify-between items-center py-2">
@@ -11,12 +8,13 @@ import { RouterView, RouterLink } from "vue-router";
       </div>
 
       <ul class="flex justify-between py-2 gap-2">
-        <!-- <li>
-          <RouterLink class="text-white hover:text-slate-200 px-6 py-2 text-sm" to="/">Home</RouterLink>
-        </li>
         <li>
-          <RouterLink class="text-white hover:text-slate-200 px-6 py-2 text-sm" to="/repository">Repositories</RouterLink>
-        </li> -->
+          <RouterLink
+            class="text-white hover:text-slate-200 px-6 py-2 text-sm"
+            to="/"
+            >Home</RouterLink
+          >
+        </li>
         <li>
           <a
             class="text-white px-6 py-2 hover:text-slate-200 text-sm"
@@ -27,5 +25,4 @@ import { RouterView, RouterLink } from "vue-router";
       </ul>
     </nav>
   </header>
-  <RouterView />
 </template>

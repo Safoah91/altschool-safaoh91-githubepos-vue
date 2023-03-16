@@ -1,11 +1,9 @@
 <script setup>
-import Hero from '../components/Hero.vue';
-import Repo from '../components/Repo.vue';
+import Hero from "../components/Hero.vue";
+import AllRepos from "../components/AllRepos.vue";
 </script>
 
 <template>
   <Hero />
-  <main>
-    <Repo />
-  </main>
+  <AllRepos />
 </template>
