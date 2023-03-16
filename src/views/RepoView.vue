@@ -1,5 +1,7 @@
 <template>
-  <main class="flex items-center justify-center bg-slate-100 py-36">
+  <main
+    class="flex items-center justify-center bg-slate-100 px-8 py-24 md:py-36"
+  >
     <section class="max-w-xl">
       <h2 class="text-4xl font-bold">{{ listItem.owner?.login }}</h2>
       <p class="text-slate-500">
@@ -7,7 +9,7 @@
       </p>
       <article class="mt-6">
         <div class="shadow-lg py-4 px-8 rounded-lg">
-          <div class="flex justify-between items-center">
+          <div class="md:flex md:justify-between md:items-center">
             <div>
               <a
                 :href="listItem?.html_url"
@@ -18,7 +20,7 @@
               <p class="text-slate-500">{{ listItem.created_at }}</p>
             </div>
             <div
-              class="capitalize text-sm border border-indigo-300 text-indigo-400 h-8 px-4 rounded-3xl flex justify-center items-center"
+              class="capitalize text-sm border border-indigo-300 text-indigo-400 h-8 px-4 rounded-3xl flex justify-center items-center mt-4 md:mt-0"
             >
               {{ listItem.visibility }}
             </div>

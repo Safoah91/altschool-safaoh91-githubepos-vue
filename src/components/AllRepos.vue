@@ -1,22 +1,19 @@
 <template>
-  <section class="bg-slate-100 py-32 px-28">
+  <section class="bg-slate-100 pt-14 pb-10 px-8 md:pt-28 md:pb-32 md:px-28">
     <h2 class="text-4xl font-bold">My Repos</h2>
     <p class="text-slate-500">List of all repository</p>
-    <article class="mt-6 grid grid-cols-2 gap-6">
+    <article class="mt-6 grid gap-6 md:grid-cols-2">
       <div
-        class="shadow-lg py-4 px-8 rounded-lg"
+        class="shadow-lg py-4 px-4 lg:px-8 rounded-lg hover:bg-slate-50 transition-all"
         v-for="item in listItems"
         v-bind:key="item"
       >
-        <div class="flex justify-between">
-          <a
-            :href="item.html_url"
-            class="text-indigo-400 hover:text-indigo-600"
-          >
+        <div class="lg:flex justify-between">
+          <a :href="item.html_url" target="_blank" class="text-indigo-400">
             <p>{{ item.name }}</p>
           </a>
           <p
-            class="capitalize text-sm border border-indigo-300 text-indigo-400 hover:bg-indigo-500 hover:text-white hover:cursor-pointer px-4 py-1 rounded-3xl"
+            class="capitalize text-sm border border-indigo-300 text-indigo-400 mt-4 lg:mt-0 px-4 py-1 rounded-3xl text-center w-24 h-8"
           >
             {{ item.visibility }}
           </p>
